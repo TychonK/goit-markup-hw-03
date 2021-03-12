@@ -4,6 +4,10 @@
   --gray-color: #757575;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   color: #000;
   font-family: 'Roboto', sans-serif;
@@ -28,17 +32,15 @@ img {
 /* Main container style */
 
 .container {
-  width: 1230px;
-  margin: auto;
+  width: 1200px;
+  margin: 0 auto;
   padding: 0 15px;
 }
 
 /* Header */
 
 .header {
-  box-sizing: border-box;
   border-bottom: 1px solid #ececec;
-  width: 1600px;
   min-height: 80px;
 }
 .header-flex {
@@ -116,12 +118,11 @@ img {
 /* Hero */
 
 .hero-box {
-  width: 1600px;
-  height: 600px;
   background-color: #2f303a;
   text-align: center;
   display: flex;
   align-items: center;
+  padding: 200px 0;
 }
 .hero-title {
   line-height: 1.36;
@@ -130,12 +131,13 @@ img {
   color: #fff;
   text-transform: uppercase;
   letter-spacing: 0.06em;
+  margin: 0;
+  margin-bottom: 30px;
 }
 .hero-order-button {
-  box-sizing: border-box;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-  padding: 15px 32px;
+  padding: 10px 32px;
   font-size: 16px;
   font-weight: 700;
   line-height: 1.875;
@@ -143,6 +145,7 @@ img {
   text-decoration: none;
   letter-spacing: 0.06em;
   background-color: var(--studio-prime-color);
+  display: inline-block;
 }
 .hero-order-button:hover,
 .hero-order-button:focus {
@@ -150,10 +153,6 @@ img {
 }
 
 /* Qualities list */
-
-.qualities-box {
-  width: 1600px;
-}
 
 .qualities {
   display: flex;
@@ -181,9 +180,8 @@ img {
 
 /* What are we doing block */
 
-.services-box {
-  width: 1600px;
-  margin-top: 94px;
+.services {
+  padding-top: 0;
 }
 .services-title {
   font-weight: 700;
@@ -193,6 +191,7 @@ img {
   letter-spacing: 0.03em;
   color: var(--main-dark-color);
   margin-bottom: 50px;
+  margin-top: 0;
 }
 .services-list {
   display: flex;
@@ -203,9 +202,10 @@ img {
 
 /* Our team */
 
-.our-team-box {
-  width: 1600px;
+.team-box {
+  background-color: #f5f4fa;
 }
+
 .team-title {
   font-weight: 700;
   font-size: 36px;
@@ -253,12 +253,6 @@ img {
 
 /* Portfolio page */
 
-/* Portfolio box */
-
-.portfolio-box {
-  width: 1600px;
-}
-
 /* Filters */
 
 .filters-list {
@@ -277,7 +271,6 @@ img {
   color: var(--main-dark-color);
   border: none;
   border-radius: 4px;
-  box-sizing: border-box;
   padding: 6px 22px;
 }
 .filter-button:hover,
@@ -337,9 +330,9 @@ img {
 
 .footer {
   background-color: #2f303a;
-  width: 1600px;
-  height: 252px;
   display: flex;
+  padding-bottom: 60px;
+  padding-top: 60px;
 }
 
 /* Footer address and contacts */
